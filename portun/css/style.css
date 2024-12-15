@@ -12,6 +12,7 @@ html {
 header {
     position: relative;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .sticky {
@@ -28,8 +29,7 @@ header .header-bg {
     right: 0;
     bottom: 0;
     z-index: -1;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius: 50px;
     overflow: hidden;
     
 }
