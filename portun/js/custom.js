@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var header = $(".header-nav");
-    var stickyOffset = header.offset().top;
+    var stickyOffset = 500;
 
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > stickyOffset) {
@@ -15,9 +15,10 @@ $(document).ready(function() {
 
 });
 
+AOS.init();
 
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 5,
+    slidesPerView: 5, // Default za desktop
     centeredSlides: true,
     loop: true,
     spaceBetween: 30,
@@ -31,5 +32,19 @@ var swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1024: { // Desktop do tableta
+            slidesPerView: 4,
+        },
+        768: { // Tableti
+            slidesPerView: 3,
+        },
+        480: { // Mali ekrani (smartfoni)
+            slidesPerView: 2,
+        },
+        320: { // Najmanji ekrani
+            slidesPerView: 1,
+        },
     },
 });

@@ -6,6 +6,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Portun nekretnine</title>
 </head>
@@ -14,9 +15,9 @@
 	<header class="header">
 
 
-            <div class="header-nav">
+            <div class="header-nav" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700">
                 <div class="container">
-                    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4">
+                    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4" >
                         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                             <img src="https://portun.com/images/2024_logo.png" alt="Portun" width="30px">
                             <span class="fs-4">PORTUN</span>
@@ -35,14 +36,14 @@
             </div>
         
                 <div class="px-4 py-5 text-center">
-                    <h1 class="fw-bold display-4 mt-5" style="color: #ffffff;">Pronađite svoj dom iz snova u Istri</h1>
+                    <h1 class="fw-bold display-4 mt-5" style="color: #ffffff;" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">Pronađite svoj dom iz snova u Istri</h1>
                     <div class="col-lg-8 mx-auto">
-                        <p class="lead mb-4" style="color: #ffffff;">
+                        <p class="lead mb-4" style="color: #ffffff;" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
                             Otkrijte najbolje nekretnine u predivnoj Istri – stanovi, kuće i vile s pogledom na more i prirodu.
                         </p>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                             <!-- Search bar -->
-                            <div class="input-group input-group-lg search">
+                            <div class="input-group input-group-lg search" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1700">
                                 <input type="text" class="form-control" placeholder="Pretražite lokaciju ili vrstu nekretnine..." aria-label="Search">
                                 <button class="btn btn-primary" type="button"><img src="img/property.png" alt="Pretraži"></button>
                             </div>
@@ -51,7 +52,7 @@
                 </div>
                 
         
-                <div class="header-bg">
+                <div class="header-bg" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                     <img src="https://i.ytimg.com/vi/vWQSX6wM3pg/maxresdefault.jpg" alt="">
                 </div>
 
@@ -177,13 +178,17 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="PROFESIONALNO OGLAŠAVANJE" class="images">
+                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="PROFESIONALNO OGLAŠAVANJE" class="images">
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="title"><span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama</h2>
-                        <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše nekretnine u najkraćem mogućem roku.</p>
-                        <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi, u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup globalnoj klijenteli.</p>
-                        <a href="#" class="btn btn-secondary">Prikaži više</a>
+                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                            <h2 class="title"><span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama</h2>
+                            <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše nekretnine u najkraćem mogućem roku.</p>
+                            <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi, u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup globalnoj klijenteli.</p>
+                            <a href="#" class="btn btn-secondary">Prikaži više</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,10 +197,10 @@
 
     <section class="container-fluid news-slider">
         <div class="section-title">
-            <h2>Posljednje novosti</h2>
-            <p>Explore the latest news in Istrian real estat emarket</p>
+            <h2 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Posljednje novosti</h2>
+			<p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Explore the latest news in Istrian real estat emarket</p>
         </div>
-        <div class="bk-slider">
+        <div class="swiper-slider">
             <div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -264,11 +269,11 @@
 
     <section class="category-section">
 		<div class="section-title">
-			<h2>Posebne kategorije nekretnina</h2>
-			<p>Explore the latest news in Istrian real estat emarket</p>
+			<h2 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Posebne kategorije nekretnina</h2>
+			<p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Explore the latest news in Istrian real estat emarket</p>
 		</div>
 		<div class="container">
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
 				<li class="nav-item" role="presentation">
 					<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Novogradnja</button>
 				</li>
@@ -279,7 +284,7 @@
 					<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Nedovršeni projekti</button>
 				</li>
 			</ul>
-			<div class="tab-content" id="myTabContent">
+			<div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500" data-aos-easing="ease-in-sine">
 				<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 					<div class="row row-cols-2 row-cols-sm-4">
 						<div class="col">
@@ -587,13 +592,17 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="PROFESIONALNO OGLAŠAVANJE" class="images">
+                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="PROFESIONALNO OGLAŠAVANJE" class="images">
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="title"><span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama</h2>
-                        <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše nekretnine u najkraćem mogućem roku.</p>
-                        <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi, u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup globalnoj klijenteli.</p>
-                        <a href="#" class="btn btn-secondary">Prikaži više</a>
+                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                            <h2 class="title"><span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama</h2>
+                            <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše nekretnine u najkraćem mogućem roku.</p>
+                            <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi, u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup globalnoj klijenteli.</p>
+                            <a href="#" class="btn btn-secondary">Prikaži više</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -603,14 +612,18 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="Nekretnine u Istri" class="images">
+                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="Nekretnine u Istri" class="images">
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="title"><span>SPECIJALISTI ZA</span>Nekretnine u Istri</h2>
-                        <p>Od velikih, seoskih vila u pitoresknoj brdovitoj unutrašnjosti do iznimnih stanova s pogledom na plavo Jadransko more, Portun Immobilis je tu da vam pomogne pronaći vašu savršenu nekretninu u Istri.</p>
-                        <p>Ponosimo se pružanjem profesionalne usluge tijekom cijelog procesa, bilo da kupujete ili prodajete biti ćemo tu da vas savjetujemo i pomognemo od prvog koraka do završetka i dalje.</p>
-                        <p>Imamo više od 20 godina iskustva u poslovanju s nekretninama i sretni smo što se možemo pohvaliti visokokvalificiranim, višejezičnim timom stručnjaka koji zajedno mogu ponuditi vrlo raznolik skup vještina.</p>
-                        <a href="#" class="btn btn-secondary">Prikaži više</a>
+                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                            <h2 class="title"><span>SPECIJALISTI ZA</span>Nekretnine u Istri</h2>
+                            <p>Od velikih, seoskih vila u pitoresknoj brdovitoj unutrašnjosti do iznimnih stanova s pogledom na plavo Jadransko more, Portun Immobilis je tu da vam pomogne pronaći vašu savršenu nekretninu u Istri.</p>
+                            <p>Ponosimo se pružanjem profesionalne usluge tijekom cijelog procesa, bilo da kupujete ili prodajete biti ćemo tu da vas savjetujemo i pomognemo od prvog koraka do završetka i dalje.</p>
+                            <p>Imamo više od 20 godina iskustva u poslovanju s nekretninama i sretni smo što se možemo pohvaliti visokokvalificiranim, višejezičnim timom stručnjaka koji zajedno mogu ponuditi vrlo raznolik skup vještina.</p>
+                            <a href="#" class="btn btn-secondary">Prikaži više</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -692,6 +705,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/custom.min.js"></script>
 </body>
 </html>
