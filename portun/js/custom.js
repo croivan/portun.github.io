@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+    var header = $(".header-nav");
+    var stickyOffset = header.offset().top;
+
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > stickyOffset) {
+            header.addClass("sticky");
+        } else {
+            header.removeClass("sticky");
+        }
+    });
+
     $('select').niceSelect();
 
 });
