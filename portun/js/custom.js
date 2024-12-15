@@ -35,7 +35,7 @@ var swiper = new Swiper('.swiper', {
     },
     breakpoints: {
         1024: { // Desktop do tableta
-            slidesPerView: 4,
+            slidesPerView: 5,
         },
         768: { // Tableti
             slidesPerView: 3,
