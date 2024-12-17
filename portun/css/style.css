@@ -2,12 +2,77 @@ html {
   scroll-behavior: smooth;
 }
 
-.btn {}
+/* GENERAL */
+.btn {
+	font-weight: 600;
+	padding: .5rem 1.5rem;
+	border-radius: 50px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	-webkit-transition: background-color 0.3s ease, transform 0.3s ease;
+	-moz-transition: background-color 0.3s ease, transform 0.3s ease;
+	-ms-transition: background-color 0.3s ease, transform 0.3s ease;
+	-o-transition: background-color 0.3s ease, transform 0.3s ease;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
 
 .btn-primary {
-  color: #111111;
-  background-color: #e5c100;
-  border-color: #e5c100;
+	color: #111111;
+	background-color: #e5c100;
+	border-color: #e5c100;
+	border: none;
+}
+
+.btn-primary:hover {
+	color: #e5c100;
+	background-color: #111111;
+	border-color: #111111;
+}
+
+.btn-secondary {
+	color: #ffffff;
+	background-color: #111111;
+	border-color: #111111;
+	border: none;
+}
+
+.btn-secondary:hover {
+	color: #111111;
+	background-color: #e5c100;
+	border-color: #e5c100;
+}
+
+.btn-outline-primary {
+	color: #e5c100;
+	border: 1px solid #e5c100;
+	background: transparent;
+}
+
+.btn-outline-primary:hover {
+	color: #111111;
+	border: 1px solid #111111;
+	background: transparent;
+}
+
+.btn-outline-secondary {
+	color: #111111;
+	border: 1px solid #111111;
+	background: transparent;
+}
+
+.btn-outline-secondary:hover {
+	color: #e5c100;
+	border: 1px solid #e5c100;
+	background: transparent;
+}
+
+.btn .btn-lg {
+	font-size: 1.5rem !important;
+}
+.btn .btn-sm {
+	font-size: .75rem !important;
 }
 
 header {
@@ -79,6 +144,7 @@ header .header-bg video {
 
 header .header-nav {
   position: relative;
+  margin-bottom: 5rem;
   z-index: 999999;
 }
 
@@ -93,6 +159,10 @@ header nav {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+
+header:hover nav {
+	background-color: rgba(255, 255, 255);
 }
 
 .nav.header-menu {
@@ -144,15 +214,57 @@ header nav {
   position: absolute;
   left: 0;
   right: 0;
-  top: 100%;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.90) !important;
+  top: 100% !important;
+  padding: 3rem !important;
+  margin: 0 auto !important;
+  background-color: rgba(255, 255, 255) !important;
   border-radius: 50px !important;
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
   -ms-border-radius: 50px !important;
   -o-border-radius: 50px !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
+
+.dropdown-menu h3.menu-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 0 auto 1.5rem;
+}
+
+.dropdown-menu h4.menu-sub-title {
+	font-size: .875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 auto .5rem;
+	color: #e5c100;
+}
+
+.dropdown-menu ul {
+	margin: 0 auto 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.dropdown-menu ul li {
+	font-size: .875rem;
+}
+
+.dropdown-menu ul li::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktY2hldnJvbi1yaWdodCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjY0NiAxLjY0NmEuNS41IDAgMCAxIC43MDggMGw2IDZhLjUuNSAwIDAgMSAwIC43MDhsLTYgNmEuNS41IDAgMCAxLS43MDgtLjcwOEwxMC4yOTMgOCA0LjY0NiAyLjM1NGEuNS41IDAgMCAxIDAtLjcwOHoiLz48L3N2Zz4=");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+}
+
 
 .dropdown-menu a {
   text-decoration: none;
@@ -196,7 +308,7 @@ header nav {
 
 .search {
   max-width: 600px;
-  margin: 2rem auto 4rem;
+  margin: 2rem auto;
   background-color: #ffffff;
   padding: 5px;
   border-radius: 50px;
@@ -236,8 +348,8 @@ header nav {
 }
 
 .search .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: #bb9f00;
+  border-color: #bb9f00;
 }
 
 .search .btn-primary.round {
@@ -309,7 +421,7 @@ section {
   font-weight: 300;
 }
 
-.home-hero .btn {
+/* .home-hero .btn {
   font-weight: bold;
   padding: 1rem 2.5rem;
   border-radius: 10px;
@@ -323,7 +435,7 @@ section {
   background-color: #FFCC01;
   border-color: #FFCC01;
   color: #111111;
-}
+} */
 
 .filters {
   padding: 3rem;
