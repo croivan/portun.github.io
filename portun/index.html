@@ -1,175 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css?v-1900">
     <title>Portun nekretnine</title>
 </head>
-<body>
 
-	<header class="header">
-        
+<body>
+    <header class="header">
         <div class="header-nav" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700">
             <div class="container">
                 <nav class="navbar header-menu navbar-expand-lg py-3 mb-4">
                     <div class="container-fluid">
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <a href="/"
+                            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                             <img src="https://portun.com/images/2024_logo.png" class="mx-2" alt="Portun" width="30px">
                             <span class="fs-4">PORTUN</span>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse d-flex flex-wrap justify-content-end" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse d-flex flex-wrap justify-content-end"
+                            id="navbarSupportedContent">
                             <ul class="nav nav-pills header-menu ml-auto">
-                                <li class="nav-item"><a href="#" class="nav-link">Naslovnica</a></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Naslovnica</a>
+                                </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nekretnine</a>
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Nekretnine</a>
                                     <div class="dropdown-menu px-3 rounded-3 border-0 shadow">
                                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
                                             <div class="col">
                                                 <h3 class="menu-title">Kuće</h3>
                                                 <h4 class="menu-sub-title">Podjela po tipu</h4>
                                                 <ul>
-                                                    <li><a href="#">Adaptirane kamene kuće</a></li>
-                                                    <li><a href="#">Nove kamene kuće</a></li>
-                                                    <li><a href="#">Stare kamene kuće za adaptaciju</a></li>
+                                                    <li>
+                                                        <a href="#">Adaptirane kamene kuće</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Nove kamene kuće</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stare kamene kuće za adaptaciju</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po posebnosti</h4>
                                                 <ul>
-                                                    <li><a href="#">Kuće s bazenom</a></li>
-                                                    <li><a href="#">Kuće za osobe smanjene pokretljivosti</a></li>
+                                                    <li>
+                                                        <a href="#">Kuće s bazenom</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Kuće za osobe smanjene pokretljivosti</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po stilu</h4>
                                                 <ul>
-                                                    <li><a href="#">Moderne kuće</a></li>
-                                                    <li><a href="#">Tradicionalne kuće</a></li>
+                                                    <li>
+                                                        <a href="#">Moderne kuće</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tradicionalne kuće</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po fazi izgradnje</h4>
                                                 <ul>
-                                                    <li><a href="#">Nedovršene kuće i projekti</a></li>
-                                                    <li><a href="#">Stand by projekti</a></li>
-                                                    <li><a href="#">Kuće u izgradnji</a></li>
-                                                    <li><a href="#">Novogradnja</a></li>
+                                                    <li>
+                                                        <a href="#">Nedovršene kuće i projekti</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stand by projekti</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Kuće u izgradnji</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Novogradnja</a>
+                                                    </li>
                                                 </ul>
+                                                <div>
+                                                    <a href="#" class="btn btn-primary">Link na kategoriju</a>
+                                                </div>
                                             </div>
                                             <div class="col">
                                                 <h3 class="menu-title">Stanovi</h3>
                                                 <h4 class="menu-sub-title">Podjela po tipu</h4>
                                                 <ul>
-                                                    <li><a href="#">Garsonjere</a></li>
-                                                    <li><a href="#">Jednosobni stanovi</a></li>
-                                                    <li><a href="#">Dvosobni stanovi</a></li>
+                                                    <li>
+                                                        <a href="#">Garsonjere</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Jednosobni stanovi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Dvosobni stanovi</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po stilu</h4>
                                                 <ul>
-                                                    <li><a href="#">Moderni stanovi</a></li>
-                                                    <li><a href="#">Tradicionalni stanovi</a></li>
+                                                    <li>
+                                                        <a href="#">Moderni stanovi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tradicionalni stanovi</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po opremi</h4>
                                                 <ul>
-                                                    <li><a href="#">Stanovi za najam</a></li>
+                                                    <li>
+                                                        <a href="#">Stanovi za najam</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po fazi izgradnje</h4>
                                                 <ul>
-                                                    <li><a href="#">Stanovi u novogradnji</a></li>
-                                                    <li><a href="#">Stanovi u izgradnji</a></li>
-                                                    <li><a href="#">Nedovršeni stanovi</a></li>
+                                                    <li>
+                                                        <a href="#">Stanovi u novogradnji</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stanovi u izgradnji</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Nedovršeni stanovi</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po posebnosti</h4>
                                                 <ul>
-                                                    <li><a href="#">Stanovi s pogledom</a></li>
-                                                    <li><a href="#">Stanovi za osobe smanjene pokretljivosti</a></li>
+                                                    <li>
+                                                        <a href="#">Stanovi s pogledom</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stanovi za osobe smanjene pokretljivosti</a>
+                                                    </li>
                                                 </ul>
+                                                <div>
+                                                    <a href="#" class="btn btn-primary">Link na kategoriju</a>
+                                                </div>
                                             </div>
                                             <div class="col">
                                                 <h3 class="menu-title">Kuće</h3>
                                                 <h4 class="menu-sub-title">Podjela po tipu</h4>
                                                 <ul>
-                                                    <li><a href="#">Adaptirane kamene kuće</a></li>
-                                                    <li><a href="#">Nove kamene kuće</a></li>
-                                                    <li><a href="#">Stare kamene kuće za adaptaciju</a></li>
+                                                    <li>
+                                                        <a href="#">Adaptirane kamene kuće</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Nove kamene kuće</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stare kamene kuće za adaptaciju</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po posebnosti</h4>
                                                 <ul>
-                                                    <li><a href="#">Kuće s bazenom</a></li>
-                                                    <li><a href="#">Kuće za osobe smanjene pokretljivosti</a></li>
+                                                    <li>
+                                                        <a href="#">Kuće s bazenom</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Kuće za osobe smanjene pokretljivosti</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po stilu</h4>
                                                 <ul>
-                                                    <li><a href="#">Moderne kuće</a></li>
-                                                    <li><a href="#">Tradicionalne kuće</a></li>
+                                                    <li>
+                                                        <a href="#">Moderne kuće</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tradicionalne kuće</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po fazi izgradnje</h4>
                                                 <ul>
-                                                    <li><a href="#">Nedovršene kuće i projekti</a></li>
-                                                    <li><a href="#">Stand by projekti</a></li>
-                                                    <li><a href="#">Kuće u izgradnji</a></li>
-                                                    <li><a href="#">Novogradnja</a></li>
+                                                    <li>
+                                                        <a href="#">Nedovršene kuće i projekti</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stand by projekti</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Kuće u izgradnji</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Novogradnja</a>
+                                                    </li>
                                                 </ul>
+                                                <div>
+                                                    <a href="#" class="btn btn-primary">Link na kategoriju</a>
+                                                </div>
                                             </div>
                                             <div class="col">
                                                 <h3 class="menu-title">Stanovi</h3>
                                                 <h4 class="menu-sub-title">Podjela po tipu</h4>
                                                 <ul>
-                                                    <li><a href="#">Garsonjere</a></li>
-                                                    <li><a href="#">Jednosobni stanovi</a></li>
-                                                    <li><a href="#">Dvosobni stanovi</a></li>
+                                                    <li>
+                                                        <a href="#">Garsonjere</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Jednosobni stanovi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Dvosobni stanovi</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po stilu</h4>
                                                 <ul>
-                                                    <li><a href="#">Moderni stanovi</a></li>
-                                                    <li><a href="#">Tradicionalni stanovi</a></li>
+                                                    <li>
+                                                        <a href="#">Moderni stanovi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tradicionalni stanovi</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po opremi</h4>
                                                 <ul>
-                                                    <li><a href="#">Stanovi za najam</a></li>
+                                                    <li>
+                                                        <a href="#">Stanovi za najam</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po fazi izgradnje</h4>
                                                 <ul>
-                                                    <li><a href="#">Stanovi u novogradnji</a></li>
-                                                    <li><a href="#">Stanovi u izgradnji</a></li>
-                                                    <li><a href="#">Nedovršeni stanovi</a></li>
+                                                    <li>
+                                                        <a href="#">Stanovi u novogradnji</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stanovi u izgradnji</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Nedovršeni stanovi</a>
+                                                    </li>
                                                 </ul>
-
                                                 <h4 class="menu-sub-title">Podjela po posebnosti</h4>
                                                 <ul>
-                                                    <li><a href="#">Stanovi s pogledom</a></li>
-                                                    <li><a href="#">Stanovi za osobe smanjene pokretljivosti</a></li>
+                                                    <li>
+                                                        <a href="#">Stanovi s pogledom</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Stanovi za osobe smanjene pokretljivosti</a>
+                                                    </li>
                                                 </ul>
+                                                <div>
+                                                    <a href="#" class="btn btn-primary">Link na kategoriju</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link">Lokacije</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Usluge</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">O nama</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Novosti</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Lokacije</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Usluge</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">O nama</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Novosti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Kontakt</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link search-menu" data-bs-toggle="modal"
+                                        data-bs-target="#searchModal">
+                                        <img src="img/search.svg" alt="Search">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-                      
-                           <!-- <nav class="d-flex flex-wrap justify-content-center py-3 mb-4" >
+                <!-- <nav class="d-flex flex-wrap justify-content-center py-3 mb-4" >
                         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                             <img src="https://portun.com/images/2024_logo.png" alt="Portun" width="30px">
                             <span class="fs-4">PORTUN</span>
@@ -184,40 +292,39 @@
                             <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
                         </ul>
                     </nav> -->
-                </div>
             </div>
-        
-                <div class="px-4 pt-5 text-center">
-                    <h1 class="fw-bold display-4 mt-5" style="color: #ffffff;" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">Pronađite svoj dom iz snova u Istri</h1>
-                    <div class="col-lg-8 mx-auto">
-                        <p class="lead mb-4" style="color: #ffffff;" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
-                            Otkrijte najbolje nekretnine u predivnoj Istri – stanovi, kuće i vile s pogledom na more i prirodu.
-                        </p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <!-- Search bar -->
-                            <div class="input-group input-group-lg search" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1700">
-                                <input type="text" class="form-control" placeholder="Pretražite lokaciju ili vrstu nekretnine..." aria-label="Search">
-                                <button class="btn btn-primary" type="button"><img src="img/property.png" alt="Pretraži"></button>
-                            </div>
-                        </div>
+        </div>
+        <div class="px-4 pt-5 text-center">
+            <h1 class="fw-bold display-4 mt-5" style="color: #ffffff;" data-aos="fade-right" data-aos-easing="linear"
+                data-aos-duration="2000">Pronađite svoj dom iz snova u Istri</h1>
+            <div class="col-lg-8 mx-auto">
+                <p class="lead mb-4" style="color: #ffffff;" data-aos="fade-left" data-aos-easing="linear"
+                    data-aos-duration="2000">
+                    Otkrijte najbolje nekretnine u predivnoj Istri – stanovi, kuće i vile s pogledom na more i prirodu.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <!-- Search bar -->
+                    <div class="input-group input-group-lg search" data-aos="fade-up" data-aos-easing="linear"
+                        data-aos-duration="1700">
+                        <input type="text" class="form-control"
+                            placeholder="Pretražite lokaciju ili vrstu nekretnine..." aria-label="Search">
+                        <button class="btn btn-primary" type="button">
+                            <img src="img/property.png" alt="Pretraži">
+                        </button>
                     </div>
                 </div>
-                
-        
-                <div class="header-bg" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-                    <video src="img/header-video.mp4" muted loop autoplay playsinline></video>
-                    <!-- <img src="https://i.ytimg.com/vi/vWQSX6wM3pg/maxresdefault.jpg" alt=""> -->
-                </div>
-
-
-	</header>
-
+            </div>
+        </div>
+        <div class="header-bg" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <video src="img/header-video.mp4" muted loop autoplay playsinline></video>
+            <!-- <img src="https://i.ytimg.com/vi/vWQSX6wM3pg/maxresdefault.jpg" alt=""> -->
+        </div>
+    </header>
     <div class="container my-5">
         <div class="filters">
             <div class="filter-header text-center mb-4">
                 <h3 class="title">Gdje biste željeli živjeti?</h3>
             </div>
-    
             <form>
                 <!-- Main Filters -->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
@@ -252,7 +359,6 @@
                         <button type="submit" class="btn btn-primary">Pretraži</button>
                     </div>
                 </div>
-    
                 <!-- Expandable Filters -->
                 <!-- <div class="accordion" id="additionalFiltersAccordion">
                     <div class="accordion-item">
@@ -323,21 +429,30 @@
             </form>
         </div>
     </div>
-    
     <div class="home-hero">
         <div class="hero">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="PROFESIONALNO OGLAŠAVANJE" class="images">
+                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg"
+                                alt="PROFESIONALNO OGLAŠAVANJE" class="images">
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                            <h2 class="title"><span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama</h2>
-                            <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše nekretnine u najkraćem mogućem roku.</p>
-                            <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi, u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup globalnoj klijenteli.</p>
+                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <h2 class="title">
+                                <span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama
+                            </h2>
+                            <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili
+                                investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše
+                                nekretnine u najkraćem mogućem roku.</p>
+                            <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina
+                                iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi,
+                                u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup
+                                globalnoj klijenteli.</p>
                             <a href="#" class="btn btn-secondary">Prikaži više</a>
                         </div>
                     </div>
@@ -345,283 +460,317 @@
             </div>
         </div>
     </div>
-
     <section class="container-fluid news-slider">
         <div class="section-title">
-            <h2 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Posljednje novosti</h2>
-			<p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Explore the latest news in Istrian real estat emarket</p>
+            <h2 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                Posljednje novosti</h2>
+            <p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                Explore the latest news in Istrian real estat emarket</p>
         </div>
         <div class="swiper-slider">
             <div class="swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/8475/crop/A_1823x_10.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/A1796S1/crop/01a.JPG" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/8475/crop/A_1823x_10.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/10549/crop/A_1720_01.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/A1796S1/crop/01a.JPG" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/8475/crop/A_1823x_10.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<img src="https://portun.com/userfiles1/nekretnine/10549/crop/A_1720_01.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
-							</div>
-						</div>
-					</div>
-                    
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/8475/crop/A_1823x_10.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/A1796S1/crop/01a.JPG"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/8475/crop/A_1823x_10.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/10549/crop/A_1720_01.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/A1796S1/crop/01a.JPG"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/8475/crop/A_1823x_10.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://portun.com/userfiles1/nekretnine/10549/crop/A_1720_01.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rovinj, moderan stan s vrtom</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
-
     <section class="category-section">
-		<div class="section-title">
-			<h2 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Posebne kategorije nekretnina</h2>
-			<p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">Explore the latest news in Istrian real estat emarket</p>
-		</div>
-		<div class="container">
-			<ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-				<li class="nav-item" role="presentation">
-					<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Novogradnja</button>
-				</li>
-				<li class="nav-item" role="presentation">
-					<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">U izgradnji</button>
-				</li>
-				<li class="nav-item" role="presentation">
-					<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Nedovršeni projekti</button>
-				</li>
-			</ul>
-			<div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500" data-aos-easing="ease-in-sine">
-				<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-					<div class="row row-cols-2 row-cols-sm-4 justify-content-center">
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Moderni stanovi</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Moderne kuće i vile</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Stare kamene kuće za adaptaciju</h5>
-								</div>
-							</div>
-						</div>
-                        <div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Moderni stanovi</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="section-title">
+            <h2 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                Posebne kategorije nekretnina</h2>
+            <p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                Explore the latest news in Istrian real estat emarket</p>
+        </div>
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Novogradnja</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">U
+                        izgradnji</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Nedovršeni
+                        projekti</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500"
+                data-aos-easing="ease-in-sine">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
                     <div class="row row-cols-2 row-cols-sm-4 justify-content-center">
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
                         <div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
-					</div>
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Moderni stanovi</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Moderne kuće i vile</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Stare kamene kuće za adaptaciju</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Moderni stanovi</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-				<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
                     <div class="row row-cols-2 row-cols-sm-4 justify-content-center">
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
-					</div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-			  </div>
-
-              <div class="section-title mt-5">
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="row row-cols-2 row-cols-sm-4 justify-content-center">
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-title mt-5">
                 <h2>Pretraga po stilu</h2>
                 <p>Explore the latest news in Istrian real estat emarket</p>
             </div>
-
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-				<li class="nav-item" role="presentation">
-					<button class="nav-link active" id="moderno-tab" data-bs-toggle="tab" data-bs-target="#moderno-tab-pane" type="button" role="tab" aria-controls="moderno-tab-pane" aria-selected="true">Moderno</button>
-				</li>
-				<li class="nav-item" role="presentation">
-					<button class="nav-link" id="tradicionalno-tab" data-bs-toggle="tab" data-bs-target="#tradicionalno-tab-pane" type="button" role="tab" aria-controls="tradicionalno-tab-pane" aria-selected="false">Tradicionalno</button>
-				</li>
-			</ul>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="moderno-tab" data-bs-toggle="tab"
+                        data-bs-target="#moderno-tab-pane" type="button" role="tab" aria-controls="moderno-tab-pane"
+                        aria-selected="true">Moderno</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tradicionalno-tab" data-bs-toggle="tab"
+                        data-bs-target="#tradicionalno-tab-pane" type="button" role="tab"
+                        aria-controls="tradicionalno-tab-pane" aria-selected="false">Tradicionalno</button>
+                </li>
+            </ul>
             <div class="tab-content" id="myTabContent">
-				<div class="tab-pane fade show active" id="moderno-tab-pane" role="tabpanel" aria-labelledby="moderno-tab" tabindex="0">
-					<div class="row row-cols-2 row-cols-sm-4 justify-content-center">
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Moderni stanovi</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Moderne kuće i vile</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Stare kamene kuće za adaptaciju</h5>
-								</div>
-							</div>
-						</div>
-                        <div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Moderni stanovi</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="tradicionalno-tab-pane" role="tabpanel" aria-labelledby="tradicionalno-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="moderno-tab-pane" role="tabpanel"
+                    aria-labelledby="moderno-tab" tabindex="0">
                     <div class="row row-cols-2 row-cols-sm-4 justify-content-center">
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
                         <div class="col">
-							<div class="card text-bg-dark">
-								<img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG" class="card-img" alt="...">
-								<div class="card-img-overlay">
-									<h5 class="card-title">Card title</h5>
-								</div>
-							</div>
-						</div>
-					</div>
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Moderni stanovi</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Moderne kuće i vile</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Stare kamene kuće za adaptaciju</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Moderni stanovi</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tradicionalno-tab-pane" role="tabpanel"
+                    aria-labelledby="tradicionalno-tab" tabindex="0">
+                    <div class="row row-cols-2 row-cols-sm-4 justify-content-center">
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/A_Novogradnje_zgrade.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/02_Adaptirane_kamene_ku%C4%87e_-_2500.jpg"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark">
+                                <img src="https://portun.com/userfiles1/filtkat/small/2023_08_19_035.JPG"
+                                    class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-		</div>
+        </div>
     </section>
-
     <section class="container properties">
         <div class="section-title text-center ">
             <h2>Istaknute nekretnine u Istri</h2>
             <p>Pronađite savršen dom ili investiciju među našim pažljivo odabranim nekretninama u predivnoj Istri.</p>
         </div>
-    
         <div id="featuredPropertiesCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-    
                 <!-- First slide -->
                 <div class="carousel-item active">
                     <div class="row row-cols-2 row-cols-sm-4">
                         <!-- Property 1 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/8806/crop/Luxury_villa_in_Rovinj_Istria_20847_001.jpg" class="card-img-top" alt="Nekretnina 1">
+                                <img src="https://portun.com/userfiles1/nekretnine/8806/crop/Luxury_villa_in_Rovinj_Istria_20847_001.jpg"
+                                    class="card-img-top" alt="Nekretnina 1">
                                 <div class="card-body">
                                     <h5 class="card-title">Vila s pogledom na more</h5>
                                     <p class="card-text">150 m² • 3 sobe • 2 kupaonice</p>
@@ -633,7 +782,8 @@
                         <!-- Property 2 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/K854/crop/K_854_02.jpg" class="card-img-top" alt="Nekretnina 2">
+                                <img src="https://portun.com/userfiles1/nekretnine/K854/crop/K_854_02.jpg"
+                                    class="card-img-top" alt="Nekretnina 2">
                                 <div class="card-body">
                                     <h5 class="card-title">Rustikalna kuća u selu</h5>
                                     <p class="card-text">120 m² • 4 sobe • 1 kupaonica</p>
@@ -645,7 +795,8 @@
                         <!-- Property 3 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/8143/crop/A_1817_09.jpg" class="card-img-top" alt="Nekretnina 3">
+                                <img src="https://portun.com/userfiles1/nekretnine/8143/crop/A_1817_09.jpg"
+                                    class="card-img-top" alt="Nekretnina 3">
                                 <div class="card-body">
                                     <h5 class="card-title">Moderan stan u Puli</h5>
                                     <p class="card-text">90 m² • 2 sobe • 2 kupaonice</p>
@@ -657,7 +808,8 @@
                         <!-- Property 4 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/K925/crop/K_925_01.jpg" class="card-img-top" alt="Nekretnina 4">
+                                <img src="https://portun.com/userfiles1/nekretnine/K925/crop/K_925_01.jpg"
+                                    class="card-img-top" alt="Nekretnina 4">
                                 <div class="card-body">
                                     <h5 class="card-title">Kuća s bazenom</h5>
                                     <p class="card-text">180 m² • 5 soba • 3 kupaonice</p>
@@ -668,14 +820,14 @@
                         </div>
                     </div>
                 </div>
-    
                 <!-- Second slide -->
                 <div class="carousel-item">
                     <div class="row row-cols-2 row-cols-sm-4">
                         <!-- Property 1 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/8806/crop/Luxury_villa_in_Rovinj_Istria_20847_001.jpg" class="card-img-top" alt="Nekretnina 1">
+                                <img src="https://portun.com/userfiles1/nekretnine/8806/crop/Luxury_villa_in_Rovinj_Istria_20847_001.jpg"
+                                    class="card-img-top" alt="Nekretnina 1">
                                 <div class="card-body">
                                     <h5 class="card-title">Vila s pogledom na more</h5>
                                     <p class="card-text">150 m² • 3 sobe • 2 kupaonice</p>
@@ -687,7 +839,8 @@
                         <!-- Property 2 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/K854/crop/K_854_02.jpg" class="card-img-top" alt="Nekretnina 2">
+                                <img src="https://portun.com/userfiles1/nekretnine/K854/crop/K_854_02.jpg"
+                                    class="card-img-top" alt="Nekretnina 2">
                                 <div class="card-body">
                                     <h5 class="card-title">Rustikalna kuća u selu</h5>
                                     <p class="card-text">120 m² • 4 sobe • 1 kupaonica</p>
@@ -699,7 +852,8 @@
                         <!-- Property 3 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/8143/crop/A_1817_09.jpg" class="card-img-top" alt="Nekretnina 3">
+                                <img src="https://portun.com/userfiles1/nekretnine/8143/crop/A_1817_09.jpg"
+                                    class="card-img-top" alt="Nekretnina 3">
                                 <div class="card-body">
                                     <h5 class="card-title">Moderan stan u Puli</h5>
                                     <p class="card-text">90 m² • 2 sobe • 2 kupaonice</p>
@@ -711,7 +865,8 @@
                         <!-- Property 4 -->
                         <div class="col">
                             <div class="card">
-                                <img src="https://portun.com/userfiles1/nekretnine/K925/crop/K_925_01.jpg" class="card-img-top" alt="Nekretnina 4">
+                                <img src="https://portun.com/userfiles1/nekretnine/K925/crop/K_925_01.jpg"
+                                    class="card-img-top" alt="Nekretnina 4">
                                 <div class="card-body">
                                     <h5 class="card-title">Kuća s bazenom</h5>
                                     <p class="card-text">180 m² • 5 soba • 3 kupaonice</p>
@@ -722,158 +877,283 @@
                         </div>
                     </div>
                 </div>
-    
             </div>
-    
             <!-- Carousel controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#featuredPropertiesCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredPropertiesCarousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Prethodni</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuredPropertiesCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredPropertiesCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Sljedeći</span>
             </button>
         </div>
     </section>
-    
-
     <div class="home-hero">
         <div class="hero">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="PROFESIONALNO OGLAŠAVANJE" class="images">
+                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg"
+                                alt="PROFESIONALNO OGLAŠAVANJE" class="images">
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                            <h2 class="title"><span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama</h2>
-                            <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše nekretnine u najkraćem mogućem roku.</p>
-                            <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi, u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup globalnoj klijenteli.</p>
+                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <h2 class="title">
+                                <span>PROFESIONALNO OGLAŠAVANJE</span>Prodajte s nama
+                            </h2>
+                            <p>Bilo da želite prodati spektakularan penthouse u Rovinju, idiličnu kamenu vilu ili
+                                investicijski projekt u srcu Istre, naš iskusni tim može Vam pomoći u prodaji Vaše
+                                nekretnine u najkraćem mogućem roku.</p>
+                            <p>Naš tim sastoji se od visoko motiviranih, licenciranih agenata s najmanje 10 godina
+                                iskustva u poslovanju nekretninama. Radeći zajedno s našom partnerskom mrežom u Europi,
+                                u mogućnosti smo pružiti izvrsnu vidljivost Vaše nekretnine i dobiti ekskluzivan pristup
+                                globalnoj klijenteli.</p>
                             <a href="#" class="btn btn-secondary">Prikaži više</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
         <div class="hero">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg" alt="Nekretnine u Istri" class="images">
+                        <div class="images" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="https://portun.com/userfiles1/pages/Real_estate_in_Istria.jpg"
+                                alt="Nekretnine u Istri" class="images">
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                            <h2 class="title"><span>SPECIJALISTI ZA</span>Nekretnine u Istri</h2>
-                            <p>Od velikih, seoskih vila u pitoresknoj brdovitoj unutrašnjosti do iznimnih stanova s pogledom na plavo Jadransko more, Portun Immobilis je tu da vam pomogne pronaći vašu savršenu nekretninu u Istri.</p>
-                            <p>Ponosimo se pružanjem profesionalne usluge tijekom cijelog procesa, bilo da kupujete ili prodajete biti ćemo tu da vas savjetujemo i pomognemo od prvog koraka do završetka i dalje.</p>
-                            <p>Imamo više od 20 godina iskustva u poslovanju s nekretninama i sretni smo što se možemo pohvaliti visokokvalificiranim, višejezičnim timom stručnjaka koji zajedno mogu ponuditi vrlo raznolik skup vještina.</p>
+                        <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <h2 class="title">
+                                <span>SPECIJALISTI ZA</span>Nekretnine u Istri
+                            </h2>
+                            <p>Od velikih, seoskih vila u pitoresknoj brdovitoj unutrašnjosti do iznimnih stanova s
+                                pogledom na plavo Jadransko more, Portun Immobilis je tu da vam pomogne pronaći vašu
+                                savršenu nekretninu u Istri.</p>
+                            <p>Ponosimo se pružanjem profesionalne usluge tijekom cijelog procesa, bilo da kupujete ili
+                                prodajete biti ćemo tu da vas savjetujemo i pomognemo od prvog koraka do završetka i
+                                dalje.</p>
+                            <p>Imamo više od 20 godina iskustva u poslovanju s nekretninama i sretni smo što se možemo
+                                pohvaliti visokokvalificiranim, višejezičnim timom stručnjaka koji zajedno mogu ponuditi
+                                vrlo raznolik skup vještina.</p>
                             <a href="#" class="btn btn-secondary">Prikaži više</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="container text-center py-5">
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
             <button type="button" class="btn btn-outline-primary">Primary</button>
             <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            <br><br>
+            <br>
+            <br>
             <button type="button" class="btn btn-primary btn-lg">Large button</button>
             <button type="button" class="btn btn-secondary btn-lg">Large button</button>
             <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
             <button type="button" class="btn btn-outline-secondary btn-lg">Secondary</button>
-            <br><br>
+            <br>
+            <br>
             <button type="button" class="btn btn-primary btn-sm">Small button</button>
             <button type="button" class="btn btn-secondary btn-sm">Small button</button>
             <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
             <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
         </div>
     </div>
-
     <!-- Footer Start -->
-<footer class="footer bg-dark text-light pt-5 pb-3">
-    <div class="container">
-      <div class="row">
-        <!-- Kontakt Section -->
-        <div class="col-md-3 mb-4">
-          <h5 class="footer-title">Kontakt</h5>
-          <p>Portun Immobilis d.o.o.</p>
-          <p>OIB 67116473353</p>
-          <p>52210 Rovinj, Trg na Križu 1</p>
-          <p>Pon - Pet, 9.00 - 17.00<br>Sub 9.00 - 13.00</p>
-          <p>+38552840456<br>+385919386003</p>
-          <p>info@portun.com</p>
-          <p>Viber: +385919386003<br>WhatsApp: +385919386003</p>
+    <footer class="footer bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Kontakt Section -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Kontakt</h5>
+                    <p>Portun Immobilis d.o.o.</p>
+                    <p>OIB 67116473353</p>
+                    <p>52210 Rovinj, Trg na Križu 1</p>
+                    <p>Pon - Pet, 9.00 - 17.00
+                        <br>Sub 9.00 - 13.00
+                    </p>
+                    <p>+38552840456
+                        <br>+385919386003
+                    </p>
+                    <p>info@portun.com</p>
+                    <p>Viber: +385919386003
+                        <br>WhatsApp: +385919386003
+                    </p>
+                </div>
+                <!-- Licenca Section -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Licenca</h5>
+                    <p>Ovlašteni posrednik u prometu nekretnina</p>
+                    <p>Registarski broj upisa: 188/2009</p>
+                </div>
+                <!-- Informacije Section -->
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Informacije</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link">O nama</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Prodajte s nama</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Kupujte s nama</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Opći uvjeti poslovanja</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Obavijest o privatnosti</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Autorska prava</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Partneri Section -->
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Partneri</h5>
+                    <ul class="list-unstyled">
+                        <li>REKER IMMOBILIEN</li>
+                        <li>MARIS</li>
+                    </ul>
+                </div>
+                <!-- Prati nas Section -->
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Prati nas</h5>
+                    <ul class="list-unstyled social-links">
+                        <li>
+                            <a href="#" class="footer-link">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-2">
+                    <p class="mb-0">&copy; Portun Immobilis d.o.o.. All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mb-2">
+                    <p class="mb-0">Izrada web stranica ADRIA INFORMATIKA d.o.o.</p>
+                </div>
+            </div>
         </div>
-  
-        <!-- Licenca Section -->
-        <div class="col-md-3 mb-4">
-          <h5 class="footer-title">Licenca</h5>
-          <p>Ovlašteni posrednik u prometu nekretnina</p>
-          <p>Registarski broj upisa: 188/2009</p>
-        </div>
-  
-        <!-- Informacije Section -->
-        <div class="col-md-2 mb-4">
-          <h5 class="footer-title">Informacije</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">O nama</a></li>
-            <li><a href="#" class="footer-link">Prodajte s nama</a></li>
-            <li><a href="#" class="footer-link">Kupujte s nama</a></li>
-            <li><a href="#" class="footer-link">Opći uvjeti poslovanja</a></li>
-            <li><a href="#" class="footer-link">Obavijest o privatnosti</a></li>
-            <li><a href="#" class="footer-link">Autorska prava</a></li>
-            <li><a href="#" class="footer-link">Disclaimer</a></li>
-          </ul>
-        </div>
-  
-        <!-- Partneri Section -->
-        <div class="col-md-2 mb-4">
-          <h5 class="footer-title">Partneri</h5>
-          <ul class="list-unstyled">
-            <li>REKER IMMOBILIEN</li>
-            <li>MARIS</li>
-          </ul>
-        </div>
-  
-        <!-- Prati nas Section -->
-        <div class="col-md-2 mb-4">
-          <h5 class="footer-title">Prati nas</h5>
-          <ul class="list-unstyled social-links">
-            <li><a href="#" class="footer-link">Instagram</a></li>
-            <li><a href="#" class="footer-link">Facebook</a></li>
-            <li><a href="#" class="footer-link">YouTube</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <hr class="border-secondary">
-  
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-2">
-          <p class="mb-0">&copy; Portun Immobilis d.o.o.. All Rights Reserved</p>
-        </div>
-        <div class="col-md-6 text-center text-md-end mb-2">
-          <p class="mb-0">Izrada web stranica ADRIA INFORMATIKA d.o.o.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer End -->
-  
+    </footer>
+    <!-- Footer End -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/custom.min.js"></script>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <h3>Brza pretraga</h3>
+                    <!-- Search bar -->
+                    <div class="input-group input-group-lg search" data-aos="fade-up" data-aos-easing="linear"
+                        data-aos-duration="1700">
+                        <input type="text" class="form-control"
+                            placeholder="Pretražite lokaciju ili vrstu nekretnine..." aria-label="Search">
+                        <button class="btn btn-primary" type="button">
+                            <img src="img/property.png" alt="Pretraži">
+                        </button>
+                    </div>
+
+                    <h3>Detaljna pretraga</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col mb-3">
+                            <label for="bedrooms" class="form-label">Broj soba</label>
+                            <select id="bedrooms" class="wide">
+                                <option selected>Izaberite broj soba</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3+</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="bathrooms" class="form-label">Broj kupaonica</label>
+                            <select id="bathrooms" class="wide">
+                                <option selected>Izaberite broj kupaonica</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3+</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="size" class="form-label">Površina</label>
+                            <select id="size" class="wide">
+                                <option selected>Izaberite površinu</option>
+                                <option value="1">Do 50 m²</option>
+                                <option value="2">50 - 100 m²</option>
+                                <option value="3">100+ m²</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="garage" class="form-label">Garaža</label>
+                            <select id="garage" class="wide">
+                                <option selected>Izaberite opciju</option>
+                                <option value="1">Da</option>
+                                <option value="2">Ne</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="pool" class="form-label">Bazen</label>
+                            <select id="pool" class="wide">
+                                <option selected>Izaberite opciju</option>
+                                <option value="1">Da</option>
+                                <option value="2">Ne</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="garden" class="form-label">Vrt</label>
+                            <select id="garden" class="wide">
+                                <option selected>Izaberite opciju</option>
+                                <option value="1">Da</option>
+                                <option value="2">Ne</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-primary btn-lg px-5">Traži</button>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
