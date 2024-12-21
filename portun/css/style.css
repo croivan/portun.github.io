@@ -3,6 +3,39 @@ html {
 }
 
 /* GENERAL */
+.language-switch {
+  margin-left: .5rem;
+}
+.language-switch .dropdown-toggle {
+  border: none;
+  background: none;
+  font-weight: 800;
+}
+
+.language-switch .dropdown-menu {
+  width: 280px;
+  /* border-radius: 10px !important;*/
+  left: initial;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+  display: inline-block;
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flag-hr { background-image: url('https://flagcdn.com/w40/hr.png'); }
+.flag-en { background-image: url('https://flagcdn.com/w40/gb.png'); }
+.flag-de { background-image: url('https://flagcdn.com/w40/de.png'); }
+.flag-it { background-image: url('https://flagcdn.com/w40/it.png'); }
+.flag-si { background-image: url('https://flagcdn.com/w40/si.png'); }
+.flag-ru { background-image: url('https://flagcdn.com/w40/ru.png'); }
+.flag-ua { background-image: url('https://flagcdn.com/w40/ua.png'); }
+.flag-hu { background-image: url('https://flagcdn.com/w40/hu.png'); }
+
 .btn {
 	font-weight: 600;
 	padding: .5rem 1.5rem;
